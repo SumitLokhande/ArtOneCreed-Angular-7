@@ -1,15 +1,7 @@
-<nav class="navbar navbar-dark bg-dark sticky-top">
-  <a class="navbar-brand" >
-      <!-- <img src="../../../assets/imgs/capco_logo.jpg" alt="Logo" style="width:40px;"> -->
-      <span class="navbar-brand mb-0 h1">ArtONECreed</span>
-  </a>
-  <!-- Links -->
-<div class="btn-group dropdown" *ngIf="userName" >
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        {{userName}}
-    </button>
-    <div class="dropdown-menu dropdown-menu-right">
-        <button class="dropdown-item" type="button" (click)="logout()">Logout</button>
-    </div>
-  </div>
-</nav>
+<app-nav-bar></app-nav-bar>
+
+    <router-outlet></router-outlet>
+  
+<footer>
+  <app-footer></app-footer>
+</footer>

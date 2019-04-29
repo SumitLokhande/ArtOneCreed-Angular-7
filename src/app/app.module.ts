@@ -9,11 +9,19 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { ShareService } from './services/share.service';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { DancePageComponent } from './pages/dance-page/dance-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavBarComponent,
+    HomePageComponent,
+    FooterComponent,
+    DancePageComponent,
   ],
   imports: [
     BrowserModule,

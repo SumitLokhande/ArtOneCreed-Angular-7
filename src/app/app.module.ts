@@ -13,6 +13,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DancePageComponent } from './pages/dance-page/dance-page.component';
+import { ShowcaseComponent } from './components/showcase/showcase.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DancePageComponent } from './pages/dance-page/dance-page.component';
     HomePageComponent,
     FooterComponent,
     DancePageComponent,
+    ShowcaseComponent,
   ],
   imports: [
     BrowserModule,

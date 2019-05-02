@@ -14,6 +14,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DancePageComponent } from './pages/dance-page/dance-page.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
+import { DetailSnippetBlockComponent } from './components/detail-snippet-block/detail-snippet-block.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ShowcaseComponent } from './components/showcase/showcase.component';
     FooterComponent,
     DancePageComponent,
     ShowcaseComponent,
+    DetailSnippetBlockComponent,
   ],
   imports: [
     BrowserModule,

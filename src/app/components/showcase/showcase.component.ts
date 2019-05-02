@@ -12,10 +12,7 @@ export class ShowcaseComponent implements OnInit {
     { name : 'Graffiti'},
     { name : 'Music'},
     { name : 'Photography'},
-    { name : 'Travel'},
-    { name : 'Music'},
-    { name : 'Photography'},
-    { name : 'Travel'},
+    { name : 'Travel'}
 
   ]
   constructor() {

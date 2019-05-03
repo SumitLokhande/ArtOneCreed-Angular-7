@@ -25,5 +25,6 @@ export class ShowcaseComponent implements OnInit {
   showDetails(name){
     this.showDetailActive=true;
     console.log(name);
+    this.url = '../../../assets/imgs/paolo-nicolello-546092-unsplash.jpg';
   }
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-showcase',
   templateUrl: './showcase.component.html',
@@ -7,22 +6,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowcaseComponent implements OnInit {
   url: string;
+  showDetailActive: boolean;
   artForms =  [
-    { name : 'Dance'},
-    { name : 'Graffiti'},
-    { name : 'Music'},
-    { name : 'Photography'},
-    { name : 'Travel'}
+    { name : 'Dance', url : '../../../assets/imgs/zac-ong-463187-unsplash.jpg'},
+    { name : 'Graffiti' , url : '../../../assets/imgs/paolo-nicolello-546092-unsplash.jpg'},
+    { name : 'Music', url : '../../../assets/imgs/zac-ong-463187-unsplash.jpg'},
+    { name : 'Photography', url : '../../../assets/imgs/zac-ong-463187-unsplash.jpg'},
+    { name : 'Travel', url : '../../../assets/imgs/zac-ong-463187-unsplash.jpg'}
 
   ]
   constructor() {
-    this.url = 'https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80';
+    this.url = '../../../assets/imgs/zac-ong-463187-unsplash.jpg';
    }
 
   ngOnInit() {
   }
 
   showDetails(name){
+    this.showDetailActive=true;
     console.log(name);
   }
 }

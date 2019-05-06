@@ -1,3 +1,48 @@
-<p>
-  dance-page works!
-</p>
+<!-- <div class="container">
+
+          <div class="container  mb-3 ">
+
+              <ul class="list-group list-group-flush ">
+                <li class="list-group-item list-group-item-dark">5.Please describe your project in one sentence: *</li>
+                <li class="list-group-item">Platform BOW ICO logo BOW BOW APP is a Blockchain application that ensures the traceability of luxury products for individuals. The BOW SOFTWARE is a B2B platform for luxury... UPCOMING</li>
+                <li class="list-group-item list-group-item-dark">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item list-group-item-dark">Vestibulum at eros</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+
+              </ul>
+            </div>
+            <hr>
+          <div class="container mb-3 ">
+
+              <ul class="list-group ">
+                  <li class="list-group-item list-group-item-dark" aria-disabled="true">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item list-group-item-dark">Morbi leo risus</li>
+                  <li class="list-group-item">Porta ac consectetur ac</li>
+                  <li class="list-group-item list-group-item-dark">Vestibulum at eros</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+
+                </ul>
+            </div>
+      </div>
+ -->
+
+<table class="table container p-6">
+  <thead class="thead-dark">
+      <tr>
+          <th scope="col">#</th>
+          <th scope="col">Questions</th>
+          <th scope="col">Answers</th>
+        </tr>
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list;  let i = index">
+      <td scope="row">{{i+1}}.</td>
+      <td>{{item.que}}</td>
+      <td>{{item.ans}}</td>
+    </tr>
+
+  </tbody>
+</table>

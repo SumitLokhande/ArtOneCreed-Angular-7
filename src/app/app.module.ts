@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DancePageComponent } from './pages/dance-page/dance-page.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { DetailSnippetBlockComponent } from './components/detail-snippet-block/detail-snippet-block.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { DetailSnippetBlockComponent } from './components/detail-snippet-block/d
     DancePageComponent,
     ShowcaseComponent,
     DetailSnippetBlockComponent,
+    AboutUsComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,

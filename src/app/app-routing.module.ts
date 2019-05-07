@@ -6,7 +6,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'about-us', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'dance', component: DancePageComponent },
   { path: 'about-us', component: AboutUsComponent },

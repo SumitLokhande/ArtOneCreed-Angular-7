@@ -18,6 +18,7 @@ import { DetailSnippetBlockComponent } from './components/detail-snippet-block/d
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,27 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({
+      "backgroundPadding": 7,
+      "radius": 60,
+      "space": -2,
+      "outerStrokeWidth": 2,
+      "outerStrokeColor": "#808080",
+      "innerStrokeColor": "#e7e8ea",
+      "innerStrokeWidth": 2,
+      "title": [
+        "working",
+        "in",
+        "progress"
+      ],
+      "titleFontSize": '12',
+      "subtitleFontSize": '20',
+      "animateTitle": false,
+      "animationDuration": 1000,
+      "showUnits": false,
+      "clockwise": false
+    })
   ],
   providers: [
     ShareService, { provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true,  }
